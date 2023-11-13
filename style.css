@@ -1,34 +1,30 @@
-h2:nth-of-type(odd){
-	border:5px solid pink;
+p{
+	background:radial-gradient(yellow,pink,purple);
+}
 	
-}
-h2:nth-of-type(even){
-	border:5px dashed black; 
-}
 .box{
-	width:300px;
-	height:250px;
-	background:#D5478B;
-	border-top-right-radius:40%;
-	border-bottom-left-radius:40%;
+	width:350px;
+	height:200px;
+	background:pink;
+	position:relative;
 }
-.dotted {
-	border-style: dotted;
-	color: red;
+.box .box{
+	background:#EB2528; 
+	max-width:350px;
+	max-height:250px;
+	height:200px;
+	width:350px;
+	position:absolute
 }
-.groove{
-	border-style:groove;
-	color:pink;
-	}
-	.inset{
-		border-style:inset;
-	    color:green;
-		}
-		.outset{
-			border-style:outset;
-	    color:gray;
-		}
-		.double{
-				border-style:double;
-	    color:blue;
-			}
+.box .circle{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background:url('011.webp'); 
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	position:absolute;
+	top:23%;
+	left:35%
+}
